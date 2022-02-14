@@ -1,0 +1,50 @@
+body {
+  background: #998235;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 170px;
+  height: 90px;
+  background: #191919;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.inner > div {
+  position: relative;
+  background: white;
+  width: 20px;
+  height: 78%;
+  border-radius: 5px;
+}
+.two::before,
+.three::before,
+.five::before,
+.six::before,
+.seven::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 35px;
+  background: #191919;
+}
+.one::after,
+.four::after,
+.six::after,
+.two::after,
+.five::after {
+  position: absolute;
+  right: 0px;
+  content: "";
+  width: 5px;
+  height: 35px;
+  background: #191919;
+}
